@@ -16,14 +16,16 @@
 
     <!-- Sidebar -->
     <aside class="w-64 bg-sk-darkgreen text-white flex flex-col shadow-2xl flex-shrink-0">
-        <div class="h-20 flex items-center justify-center border-b border-emerald-800 px-4 gap-3">
+        <!-- Changed border-emerald-800 to border-pink-800 -->
+        <div class="h-20 flex items-center justify-center border-b border-pink-800 px-4 gap-3">
             <div
                 class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-sk-green font-bold text-lg border-2 border-sk-yellow">
                 SK
             </div>
             <div class="flex flex-col">
-                <span class="font-bold text-lg leading-tight text-sk-yellow">Makabataan</span>
-                <span class="text-[10px] uppercase tracking-widest text-emerald-200">Admin Portal</span>
+                <span class="font-bold text-lg leading-tight text-sk-yellow">Poblacion</span>
+                <!-- Changed text-emerald-200 to text-pink-300 -->
+                <span class="text-[10px] uppercase tracking-widest text-pink-300">Admin Portal</span>
             </div>
         </div>
 
@@ -31,49 +33,49 @@
 
             <!-- Dashboard -->
             <a href="{{ route('admin.dashboard') }}"
-                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.dashboard') ? 'bg-sk-green text-white shadow-md' : 'text-emerald-100 hover:bg-emerald-800 hover:text-white' }}">
+                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.dashboard') ? 'bg-sk-green text-white shadow-md' : 'text-pink-100 hover:bg-pink-800 hover:text-white' }}">
                 <i class="fas fa-chart-line w-5 text-center"></i> Dashboard
             </a>
 
             <!-- Book Categories -->
             <a href="{{ route('admin.categories.index') }}"
-                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.categories.*') ? 'bg-sk-green text-white shadow-md' : 'text-emerald-100 hover:bg-emerald-800 hover:text-white' }}">
+                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.categories.*') ? 'bg-sk-green text-white shadow-md' : 'text-pink-100 hover:bg-pink-800 hover:text-white' }}">
                 <i class="fas fa-book w-5 text-center"></i> Book Categories
             </a>
 
             <!-- Public Disclosure -->
             <a href="{{ route('admin.disclosure.index') }}"
-                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.disclosure.*') ? 'bg-sk-green text-white shadow-md' : 'text-emerald-100 hover:bg-emerald-800 hover:text-white' }}">
+                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.disclosure.*') ? 'bg-sk-green text-white shadow-md' : 'text-pink-100 hover:bg-pink-800 hover:text-white' }}">
                 <i class="fas fa-folder-open w-5 text-center"></i> Public Disclosure
             </a>
 
             <!-- Projects & Events -->
             <a href="{{ route('admin.projects.index') }}"
-                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.projects.*') ? 'bg-sk-green text-white shadow-md' : 'text-emerald-100 hover:bg-emerald-800 hover:text-white' }}">
+                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.projects.*') ? 'bg-sk-green text-white shadow-md' : 'text-pink-100 hover:bg-pink-800 hover:text-white' }}">
                 <i class="fas fa-calendar-alt w-5 text-center"></i> Projects & Events
             </a>
 
             <!-- SK ID Requests -->
             <a href="{{ route('admin.sk_ids.index') }}"
-                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.sk_ids.*') ? 'bg-sk-green text-white shadow-md' : 'text-emerald-100 hover:bg-emerald-800 hover:text-white' }}">
+                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.sk_ids.*') ? 'bg-sk-green text-white shadow-md' : 'text-pink-100 hover:bg-pink-800 hover:text-white' }}">
                 <i class="fas fa-id-card w-5 text-center"></i> SK ID Requests
             </a>
 
             <!-- Youth Registry -->
             <a href="{{ route('admin.youth_registry') }}"
-                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.youth_registry') ? 'bg-sk-green text-white shadow-md' : 'text-emerald-100 hover:bg-emerald-800 hover:text-white' }}">
+                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.youth_registry') ? 'bg-sk-green text-white shadow-md' : 'text-pink-100 hover:bg-pink-800 hover:text-white' }}">
                 <i class="fas fa-users w-5 text-center"></i> Youth Registry
             </a>
 
             <!-- Suggestions Box -->
             <a href="{{ route('admin.suggestions') }}"
-                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.suggestions') ? 'bg-sk-green text-white shadow-md' : 'text-emerald-100 hover:bg-emerald-800 hover:text-white' }}">
+                class="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.suggestions') ? 'bg-sk-green text-white shadow-md' : 'text-pink-100 hover:bg-pink-800 hover:text-white' }}">
                 <i class="fas fa-lightbulb w-5 text-center"></i> Suggestions Box
             </a>
 
         </nav>
 
-        <div class="p-4 border-t border-emerald-800">
+        <div class="p-4 border-t border-pink-800">
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
                 <button type="submit"

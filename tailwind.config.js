@@ -19,10 +19,14 @@ export default {
             },
             colors: {
                 sk: {
-                    green: '#059669', // Emerald 600
-                    darkgreen: '#047857', // Emerald 700
-                    yellow: '#FBBF24', // Amber 400
-                    lightyellow: '#FDE68A', // Amber 200
+                    // Hot Magenta Pink from the poster
+                    green: '#e62b85',
+                    // Darker Magenta for hover states and dark text
+                    darkgreen: '#b81665',
+
+                    // Keeping the yellow accents (matches the "LIBRENG" text in your poster!)
+                    yellow: '#FBBF24',
+                    lightyellow: '#FDE68A',
                 }
             }
         },

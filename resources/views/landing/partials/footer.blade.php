@@ -1,24 +1,21 @@
 <!-- Call to Action Section -->
 <!-- CTA Section -->
 <section class="py-20 relative overflow-hidden">
-    <div class="absolute inset-0 bg-[#00a651]"></div>
+    <!-- Updated to use your new pink sk-green theme variable -->
+    <div class="absolute inset-0 bg-sk-green"></div>
     <!-- Abstract pattern overlay -->
     <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#FBBF24 2px, transparent 2px); background-size: 30px 30px;"></div>
 
     <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <h2 class="text-3xl md:text-5xl font-black text-white mb-6 tracking-tight">Be a Catalyst for Change</h2>
-        <p class="text-emerald-100 text-lg mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
+        <!-- Changed emerald-100 to pink-100 for better blending -->
+        <p class="text-pink-100 text-lg mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
             Do you have ideas to improve our community? We want to hear from you. Volunteer for our programs or suggest a new initiative today.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
 
-            {{-- <!-- Volunteer Button (You can link this to a volunteer page later) -->
-            <button class="px-8 py-4 rounded-xl bg-white text-[#00a651] font-bold text-lg hover:bg-gray-50 hover:shadow-xl transition-all transform hover:-translate-y-1">
-                <i class="fas fa-hands-helping mr-2"></i> Become a Volunteer
-            </button> --}}
-
             <!-- Suggestion Button (Triggers Modal) -->
-            <button onclick="openSuggestionModal()" class="px-8 py-4 rounded-xl bg-yellow-400 text-green-900 font-bold text-lg hover:bg-yellow-300 hover:shadow-xl transition-all transform hover:-translate-y-1 shadow-lg">
+            <button onclick="openSuggestionModal()" class="px-8 py-4 rounded-xl bg-sk-yellow text-sk-darkgreen font-bold text-lg hover:bg-yellow-300 hover:shadow-xl transition-all transform hover:-translate-y-1 shadow-lg">
                 Suggest an Idea <i class="fas fa-lightbulb ml-1"></i>
             </button>
 
@@ -33,7 +30,7 @@
         <!-- Modal Header -->
         <div class="p-6 border-b border-gray-100 flex justify-between items-center bg-gray-50">
             <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2">
-                <i class="fas fa-lightbulb text-yellow-500"></i> Suggest an Initiative
+                <i class="fas fa-lightbulb text-sk-yellow"></i> Suggest an Initiative
             </h3>
             <button onclick="closeSuggestionModal()" class="text-gray-400 hover:text-gray-600 transition-colors">
                 <i class="fas fa-times text-xl"></i>
@@ -41,21 +38,21 @@
         </div>
 
         <!-- Modal Form -->
-        <!-- Note: Update the action route when you create the backend logic to save this -->
-     <form action="{{ route('suggestions.store') }}" method="POST">
+        <form action="{{ route('suggestions.store') }}" method="POST">
             @csrf
             <div class="p-6 space-y-5">
                 <p class="text-sm text-gray-600 mb-2">Have a project in mind for Brgy. Poblacion? Let the SK Council know!</p>
 
                 <div>
                     <label class="block text-sm font-bold text-gray-700 mb-1">Your Name <span class="text-gray-400 font-normal">(Optional)</span></label>
-                    <input type="text" name="name" class="w-full px-4 py-3 rounded-lg border-gray-300 bg-gray-50 focus:bg-white focus:border-[#00a651] focus:ring focus:ring-green-500/20 transition-colors" placeholder="e.g. Juan Dela Cruz"
+                    <!-- Updated focus rings/borders to sk-green -->
+                    <input type="text" name="name" class="w-full px-4 py-3 rounded-lg border-gray-300 bg-gray-50 focus:bg-white focus:border-sk-green focus:ring focus:ring-sk-green/30 transition-colors" placeholder="e.g. Juan Dela Cruz"
                            @auth value="{{ Auth::user()->name }}" @endauth>
                 </div>
 
                 <div>
                     <label class="block text-sm font-bold text-gray-700 mb-1">Your Idea / Suggestion <span class="text-red-500">*</span></label>
-                    <textarea name="suggestion" rows="4" required class="w-full px-4 py-3 rounded-lg border-gray-300 bg-gray-50 focus:bg-white focus:border-[#00a651] focus:ring focus:ring-green-500/20 transition-colors" placeholder="Tell us how we can improve our barangay..."></textarea>
+                    <textarea name="suggestion" rows="4" required class="w-full px-4 py-3 rounded-lg border-gray-300 bg-gray-50 focus:bg-white focus:border-sk-green focus:ring focus:ring-sk-green/30 transition-colors" placeholder="Tell us how we can improve our barangay..."></textarea>
                 </div>
             </div>
 
@@ -64,7 +61,7 @@
                 <button type="button" onclick="closeSuggestionModal()" class="px-5 py-2.5 bg-white border border-gray-300 text-gray-700 font-bold rounded-xl hover:bg-gray-50 transition-colors shadow-sm">
                     Cancel
                 </button>
-                <button type="submit" class="px-5 py-2.5 bg-[#00a651] text-white font-bold rounded-xl hover:bg-green-700 transition-colors shadow-md flex items-center gap-2">
+                <button type="submit" class="px-5 py-2.5 bg-sk-green text-white font-bold rounded-xl hover:bg-sk-darkgreen transition-colors shadow-md flex items-center gap-2">
                     Submit Idea <i class="fas fa-paper-plane"></i>
                 </button>
             </div>
@@ -99,6 +96,7 @@
             <!-- Brand Info -->
             <div class="md:col-span-12 lg:col-span-4">
                 <div class="flex items-center gap-3 mb-6">
+                    <!-- Automatically uses the new pink sk-green -->
                     <div class="w-10 h-10 rounded-full bg-sk-green flex items-center justify-center text-white font-bold shadow-lg border border-sk-yellow">
                         SK
                     </div>
@@ -175,7 +173,7 @@
         <!-- Copyright -->
         <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
             <p class="text-gray-500 text-sm text-center md:text-left">
-                &copy; <span id="year"></span> Sangguniang Kabataan of Brgy. Poblacion. All rights reserved.
+                © <span id="year"></span> Sangguniang Kabataan of Brgy. Poblacion. All rights reserved.
             </p>
             <div class="flex gap-4 text-sm text-gray-500">
                 <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
