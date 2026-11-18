@@ -29,9 +29,9 @@
                     <div class="flex items-center gap-6 md:gap-10">
                         <a href="{{ route('landing') }}" class="flex items-center gap-3 group">
                             <img src="{{ asset('images/logo.jpg') }}" alt="SK Logo"
-                                class="w-10 h-10 rounded-full object-cover bg-white border border-gray-200 group-hover:border-[#00a651] transition-colors shadow-sm">
+                                class="w-10 h-10 rounded-full object-cover bg-white border border-gray-200 group-hover:border-sk-green transition-colors shadow-sm">
                             <div class="hidden sm:block">
-                                <h1 class="font-bold text-lg text-[#00a651] leading-tight">Brgy. Poblacion</h1>
+                                <h1 class="font-bold text-lg text-sk-green leading-tight">Brgy. Poblacion</h1>
                                 <p class="text-[10px] text-gray-500 font-bold tracking-widest uppercase">Kabataan Portal</p>
                             </div>
                         </a>
@@ -41,8 +41,8 @@
                     <div class="relative" id="user-dropdown-container">
 
                         <!-- Dropdown Trigger Button -->
-                        <button onclick="toggleDropdown()" class="flex items-center gap-2 text-sm font-bold text-gray-700 hover:text-[#00a651] transition-colors focus:outline-none bg-gray-50 hover:bg-gray-100 px-3 py-2 rounded-lg border border-gray-200">
-                            <i class="fas fa-user-circle text-[#00a651] text-lg"></i>
+                        <button onclick="toggleDropdown()" class="flex items-center gap-2 text-sm font-bold text-gray-700 hover:text-sk-green transition-colors focus:outline-none bg-gray-50 hover:bg-gray-100 px-3 py-2 rounded-lg border border-gray-200">
+                            <i class="fas fa-user-circle text-sk-green text-lg"></i>
                             <span class="hidden sm:inline">{{ Auth::user()->name ?? 'Youth User' }}</span>
                             <i class="fas fa-chevron-down text-xs ml-1 text-gray-400"></i>
                         </button>
@@ -52,13 +52,13 @@
                             <div class="py-1">
 
                                 <!-- Dashboard Link -->
-                                <a href="{{ route('dashboard') }}" class="flex items-center gap-3 px-4 py-3 text-sm font-bold transition-colors {{ request()->routeIs('dashboard') ? 'text-[#00a651] bg-green-50' : 'text-gray-700 hover:text-[#00a651] hover:bg-green-50' }}">
-                                    <i class="fas fa-home w-4 text-center {{ request()->routeIs('dashboard') ? 'text-[#00a651]' : 'text-gray-400' }}"></i> Dashboard
+                                <a href="{{ route('dashboard') }}" class="flex items-center gap-3 px-4 py-3 text-sm font-bold transition-colors {{ request()->routeIs('dashboard') ? 'text-sk-green bg-pink-50' : 'text-gray-700 hover:text-sk-green hover:bg-pink-50' }}">
+                                    <i class="fas fa-home w-4 text-center {{ request()->routeIs('dashboard') ? 'text-sk-green' : 'text-gray-400' }}"></i> Dashboard
                                 </a>
 
                                 <!-- Settings Link -->
-                                <a href="{{ route('profile.edit') }}" class="flex items-center gap-3 px-4 py-3 text-sm font-bold transition-colors {{ request()->routeIs('profile.edit') ? 'text-[#00a651] bg-green-50' : 'text-gray-700 hover:text-[#00a651] hover:bg-green-50' }}">
-                                    <i class="fas fa-cog w-4 text-center {{ request()->routeIs('profile.edit') ? 'text-[#00a651]' : 'text-gray-400' }}"></i> Settings
+                                <a href="{{ route('profile.edit') }}" class="flex items-center gap-3 px-4 py-3 text-sm font-bold transition-colors {{ request()->routeIs('profile.edit') ? 'text-sk-green bg-pink-50' : 'text-gray-700 hover:text-sk-green hover:bg-pink-50' }}">
+                                    <i class="fas fa-cog w-4 text-center {{ request()->routeIs('profile.edit') ? 'text-sk-green' : 'text-gray-400' }}"></i> Settings
                                 </a>
 
                                 <div class="border-t border-gray-100"></div>
