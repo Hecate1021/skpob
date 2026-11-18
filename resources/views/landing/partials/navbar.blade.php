@@ -57,14 +57,7 @@
             <a href="#home" onclick="toggleMobileMenu()" class="block px-4 py-3 text-base font-bold text-gray-700 hover:text-sk-green hover:bg-pink-50 rounded-xl transition-colors">
                 <i class="fas fa-home w-6 text-center mr-2 text-gray-400"></i> Home
             </a>
-            {{-- <a href="#disclosure" onclick="toggleMobileMenu()" class="block px-4 py-3 text-base font-bold text-gray-700 hover:text-sk-green hover:bg-pink-50 rounded-xl transition-colors">
-                <i class="fas fa-folder-open w-6 text-center mr-2 text-gray-400"></i> Public Disclosure
-            </a>
-            <a href="#projects" onclick="toggleMobileMenu()" class="block px-4 py-3 text-base font-bold text-gray-700 hover:text-sk-green hover:bg-pink-50 rounded-xl transition-colors">
-                <i class="fas fa-calendar-alt w-6 text-center mr-2 text-gray-400"></i> Projects
-            </a>
-            <a href="#sk-id" onclick="toggleMobileMenu()" class="block px-4 py-3 text-base font-bold text-gray-700 hover:text-sk-green hover:bg-pink-50 rounded-xl transition-colors">
-                <i class="fas fa-id-card w-6 text-center mr-2 text-gray-400"></i> SK ID --}}
+
             </a>
             <a href="#about" onclick="toggleMobileMenu()" class="block px-4 py-3 text-base font-bold text-gray-700 hover:text-sk-green hover:bg-pink-50 rounded-xl transition-colors">
                 <i class="fas fa-info-circle w-6 text-center mr-2 text-gray-400"></i> About Us
