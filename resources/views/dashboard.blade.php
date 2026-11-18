@@ -64,7 +64,7 @@
                          class="relative rounded-xl shadow-xl overflow-hidden shrink-0 border border-gray-200 bg-white font-sans">
 
                         <!-- Custom Background Image -->
-                        <img src="{{ asset('images/id.png') }}" alt="Front Background" class="absolute inset-0 w-full h-full object-cover z-0">
+                        <img src="{{ asset('images/id-bg.png') }}" alt="Front Background" class="absolute inset-0 w-full h-full object-cover z-0">
 
                         <!-- SK Watermark -->
                         <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-[5] opacity-[0.15]">
