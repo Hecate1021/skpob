@@ -15,9 +15,7 @@
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#home" class="text-gray-600 hover:text-sk-green font-bold transition-colors">Home</a>
-                <a href="#disclosure" class="text-gray-600 hover:text-sk-green font-bold transition-colors">Public Disclosure</a>
-                <a href="#projects" class="text-gray-600 hover:text-sk-green font-bold transition-colors">Projects</a>
-                <a href="#sk-id" class="text-gray-600 hover:text-sk-green font-bold transition-colors">SK ID</a>
+
                 <a href="#about" class="text-gray-600 hover:text-sk-green font-bold transition-colors">About Us</a>
 
                 <!-- Desktop Auth Links -->
